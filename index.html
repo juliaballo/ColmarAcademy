@@ -1,95 +1,215 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <header>
-        <nav class="nav-section">
-            <img src="css/images/ic-logo.svg" alt="logo">
-            <p><strong>COLMAR</strong>ACADEMY</p>
-            <ul class="nav-list">
-                <li>On campus</li>
-                <li>Online</li>
-                <li>For companies</li>
-                <li>Sign in</li>
-            </ul>
-        </nav>
-        <!--this section is display:none-->
-        <div class="logo-section">
-            <img src="css/images/ic-logo.svg" alt="logo">
-            <img class="logos" src="css/images/ic-on-campus.svg" alt="nav-logo">
-            <img class="logos" src="css/images/ic-online.svg" alt="nav-logo">
-            <img class="logos" src="css/images/ic-login.svg" alt="nav-logo">
-        </div>
-    </header>
-    <section class="first-block">
-        <main class="main-content-1">
-            <div class="main-div-1">
-                <img src="css/images/banner.jpg" alt="logo">
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colmar Academy</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <div class="inner-header">
+                <div class="desktop-logo">
+                    <img src="./media//images/ic-logo.svg" alt="Academy Logo">
+                    <h1>COLMAR<span>ACADEMY</span></h1>
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li>On campus</li>
+                        <li>Online</li>
+                        <li>For companies</li>
+                        <li>Sign in</li>
+                    </ul>
+                </nav>
+                <nav class="mobile-nav">
+                    <img src="./media/images/ic-logo.svg" alt="Home">
+                    <img src="./media/images/ic-on-campus.svg" alt="On Campus">
+                    <img src="./media/images/ic-online.svg" alt="Online">
+                    <img src="./media/images/ic-login.svg" alt="Login">
+                </nav>
             </div>
-            <div class="main-div-2">
-                <div class="top-right-conent">
-                    <h2>Learn something new everyday</h2>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                    <button class="start-button">Start here</button>
+        </header>
+
+        <!-- main sections -->
+        <section class="cta-section">
+            <img class="banner" src="./media/images/banner.jpg" alt="Learning Students">
+            <div>
+                <h1 class="cta-title">Learn something new everyday</h1>
+                <p class="cta-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input class="cta-btn" type="button" value="Start here">
+            </div>
+        </section>
+
+        <section class="information-section">
+            <div class="quote-box">
+                <img src="./media/images/information-main.jpg" alt="Learning Student">
+                <div class="quote">
+                    <h2>It doesn't hurt to keep practicing</h2>
+                    <p>
+                        "Morbi vel nisl eget felis molestie tristique a sodales mauris. Suspendisse tempus ex et risus
+                        pharetra mollis. Nulla vel luctus ex. Donec elementum justo sapien, suscipit molestie orci fermentum at."
+                    </p>
+                    <p>Emanuel, Sr Strategist at Hiring.com</p>
                 </div>
             </div>
-        </main>
-    </section>
-    <section class="second-block">
-        <main class="main-content-2">
-            <div class="main-div-3">
-                <img src="css/images/information-main.jpg" alt="main-info">
+            <div class="information-boxes">
+                <div class="info-box">
+                    <picture>
+                        <source 
+                          media="(max-width: 600px)"
+                          srcset="./media/images/information-orientation-mobile.jpg">
+                        <img 
+                          src="./media/images/information-orientation.jpg" 
+                          alt="Orientation">
+                    </picture>
+                    <div class="text-content">
+                        <h4 class="title">Orientation date</h4>
+                        <p class="description">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <picture>
+                        <source 
+                          media="(max-width: 600px)"
+                          srcset="./media/images/information-campus-mobile.jpg">
+                        <img 
+                          src="./media/images/information-campus.jpg" 
+                          alt="Campus">
+                    </picture>
+                    <div class="text-content">
+                        <h4 class="title">Our campus</h4>
+                        <p class="description">Find which campus is close by you</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <picture>
+                        <source 
+                          media="(max-width: 600px)"
+                          srcset="./media/images/information-guest-lecture-mobile.jpg">
+                        <img 
+                          src="./media/images/information-guest-lecture.jpg" 
+                          alt="Guest Lecture">
+                    </picture>
+                    <div class="text-content">
+                        <h4 class="title">Our guest lecture</h4>
+                        <p class="description">Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
             </div>
-            <div class="main-div-4">
-                <ul class="image-list">
-                    <li>
-                        <img class="desktop-view" src="css/images/information-orientation.jpg">
-                        <img class="mobile-view" src="css/images/information-orientation-mobile.jpg">
-                        <figcaption>
-                            <h4>Orientation date</h4>
-                            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                            <a style="text-decoration: none; cursor: pointer;" href="#">Read more</a>
-                        </figcaption>
-                    </li>
-                    <li>
-                        <img class="desktop-view" src="css/images/information-campus.jpg">
-                        <img class="mobile-view" src="css/images/information-campus-mobile.jpg">
-                        <figcaption>
-                            <h4>Our campus</h4>
-                            <p>Find which campus is close by you</p>
-                            <a style="text-decoration: none; cursor: pointer;" href="#">Read more</a>
-                        </figcaption>
-                    </li>
-                    <li>
-                        <img class="desktop-view" src="css/images/information-guest-lecture.jpg">
-                        <img class="mobile-view" src="css/images/information-guest-lecture-mobile.jpg">
-                        <figcaption>
-                            <h4>Our gust lecture</h4>
-                            <p>Join a keynote with Oliver Sack...</p>
-                            <a style="text-decoration: none; cursor: pointer;" href="#">Read more</a>
-                        </figcaption>
-                    </li>
-                </ul>
+        </section>
+
+        <section class="courses-section">
+            <h2>Start learning</h2>
+            <div class="desktop-course-boxes">
+                <div class="course">
+                    <img src="./media/images/course-software.jpg" alt="Software Engineering">
+                    <div class="text-content">
+                        <h4 class="title">Software engineering</h4>
+                        <p>COURSES</p>
+                        <p class="description">Web Development, Mobile Development, iOT APIs</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="./media/images/course-computer-art.jpg" alt="Software Engineering">
+                    <div class="text-content">
+                        <h4 class="title">Computer art</h4>
+                        <p>COURSES</p>
+                        <p class="description">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="./media/images/course-design.jpg" alt="Software Engineering">
+                    <div class="text-content">
+                        <h4 class="title">Design</h4>
+                        <p>COURSES</p>
+                        <p class="description">User Experience Design, User Research, Visual Design</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="./media/images/course-data.jpg" alt="Software Engineering">
+                    <div class="text-content">
+                        <h4 class="title">Data</h4>
+                        <p>COURSES</p>
+                        <p class="description">Data Science, Big Data, SQL, Data Visualization</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="./media/images/course-business.jpg" alt="Software Engineering">
+                    <div class="text-content">
+                        <h4 class="title">Business</h4>
+                        <p>COURSES</p>
+                        <p class="description">Product Development, Business Development, Startup</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="./media/images/course-marketing.jpg" alt="Software Engineering">
+                    <div class="text-content">
+                        <h4 class="title">Marketing</h4>
+                        <p>COURSES</p>
+                        <p class="description">Analytics, Content Marketing, Mobile Marketing</p>
+                    </div>
+                </div>
             </div>
-        </main>
-        
-    </section>
-</body>    
+            <div class="mobile-course-boxes">
+                <p class="course">Software engineering</p>
+                <p class="course">Computer art</p>
+                <p class="course">Design</p>
+                <p class="course">Data</p>
+                <p class="course">Business</p>
+                <p class="course">Marketing</p>
+            </div>
+        </section>
+
+        <section class="exhibit-section">
+            <h2>Thesis exhibit</h2>
+            <video class="mobile-video" width="100%" height="auto" loop autoplay muted>
+                <source src="./media/videos/thesis.mp4" type="video/mp4"  />
+            </video>
+            <div class="information-section">
+                <div class="quote-box">
+                    <video width="100%" height="auto" loop autoplay muted>
+                        <source src="./media/videos/thesis.mp4" type="video/mp4"  />
+                    </video>
+                    <div class="quote">
+                        <h4 class="title">Reimagine urban</h4>
+                        <p>
+                            "Vestibulum in ex non eros fringilla placerat at a lacus. Maecenas tincidunt tellus ac leo tristique 
+                            accumsan. Sed aliquet imperdiet blandit. Aliquam erat volutpat. Nam sit amet congue sem. Duis lorem risus, 
+                            interdum vel velit sed, malesuada tempus leo. In id neque risus. Cras porttitor felis eros, id hendrerit 
+                            nunc pellentesque quis."
+                        </p>
+                    </div>
+                </div>
+                <div class="information-boxes">
+                    <div class="info-box">
+                        <img src="./media/images/thesis-fisma.jpg" alt="Fisma Thesis">
+                        <div class="text-content">
+                            <h4 class="title">Fisma: Design and Prototype</h4>
+                            <p class="description">Designer showcase of new prototype product</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <img src="./media/images/thesis-now-and-then.jpg" alt="Now and Then Thesis">
+                        <div class="text-content">
+                            <h4 class="title">Now and then</h4>
+                            <p class="description">Research study about New York</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- header -->
+        <footer>
+            <p><span>&#169;</span> Colmar Academy. All rights reserved</p>
+            <ul>
+                <li class="c-pointer">Terms</li>
+                <li class="c-pointer">Privacy</li>
+            </ul>
+        </footer>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
